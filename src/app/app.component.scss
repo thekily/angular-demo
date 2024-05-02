@@ -1,0 +1,36 @@
+:host {
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: minmax(5vw, auto) minmax(50vw, auto) minmax(5vw, auto);
+    grid-template-rows: minmax(5vh, auto) minmax(5vh, auto) minmax(50vh, auto) minmax(5vh, auto);
+    grid-template-areas:
+        "header header  header"
+        "nav breadcrumb  breadcrumb"
+        "nav main sidebar"
+        "footer footer  footer";
+}
+
+app-header {
+    grid-area: header;
+}
+
+app-nav {
+    grid-area: nav;
+}
+
+app-breadcrumb {
+    grid-area: breadcrumb;
+}
+
+[main] {
+    grid-area: main;
+}
+
+app-footer {
+    grid-area: footer;
+}
+
+app-sidebar {
+    grid-area: sidebar;
+}
